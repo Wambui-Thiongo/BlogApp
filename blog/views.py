@@ -15,3 +15,6 @@ def post_detail(request,id):
 def sidebar(request):
     return render(request,'sidebar.html')
 
+def home(request):
+    return render(request, 'home.html')
+
