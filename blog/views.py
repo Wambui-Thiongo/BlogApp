@@ -10,9 +10,12 @@ def index(request):
 
 def post_detail(request,id):
     post=Post.objects.get(id=id)
-    comment=Comment.
+    
     return render(request,'post_detail.html',{'post':post})
 
 def sidebar(request):
     return render(request,'sidebar.html')
+
+def home(request):
+    return render(request, 'home.html')
 
