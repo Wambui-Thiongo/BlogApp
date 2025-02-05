@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from . models import Post
+from . models import Post,Comment
 
 
 
@@ -10,6 +10,7 @@ def index(request):
 
 def post_detail(request,id):
     post=Post.objects.get(id=id)
+    comment=Comment.
     return render(request,'post_detail.html',{'post':post})
 
 def sidebar(request):
